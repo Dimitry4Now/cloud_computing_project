@@ -1,0 +1,51 @@
+\relax 
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {II}System Architecture}{1}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces System architecture with external load balancer and replicated backend services}}{1}{}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:architecture}{{1}{1}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Backend Service Implementation}{1}{}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1}{\ignorespaces Ktor routing implementation for backend service}}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Backend Deployment and Execution}{2}{}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {2}{\ignorespaces Initial Gradle build command}}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}systemd Service Configuration}{2}{}\protected@file@percent }
+\newlabel{lst:systemd}{{3}{2}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3}{\ignorespaces systemd service definition for the Ktor backend}}{2}{}\protected@file@percent }
+\newlabel{lst:fatjar}{{4}{2}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {4}{\ignorespaces The actual build command that worked}}{2}{}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5}{\ignorespaces Local backend verification using curl}}{2}{}\protected@file@percent }
+\newlabel{lst:curl-output}{{6}{2}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {6}{\ignorespaces Sample JSON response from the backend}}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {V}Load Balancer Configuration}{3}{}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {7}{\ignorespaces Installing and enabling HAProxy on Ubuntu}}{3}{}\protected@file@percent }
+\newlabel{lst:haproxy}{{8}{3}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {8}{\ignorespaces HAProxy frontend and backend configuration with health checks}}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Demonstration and Results}{3}{}\protected@file@percent }
+\newlabel{lst:monitor-script}{{9}{3}{}{}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {9}{\ignorespaces Custom monitoring script for observing backend responses}}{3}{}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {10}{\ignorespaces Running the monitoring script against the load balancer}}{3}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Monitoring script showing sequential responses from backend servers}}{3}{}\protected@file@percent }
+\newlabel{fig:rr-action}{{2}{3}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-A}}Performance Evaluation Using k6}{3}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Average execution time for different numbers of backend machines}}{4}{}\protected@file@percent }
+\newlabel{fig:exec-time}{{3}{4}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Measured speedup with one, two, and three backend machines}}{4}{}\protected@file@percent }
+\newlabel{fig:speedup}{{4}{4}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces System throughput for different backend configurations}}{4}{}\protected@file@percent }
+\newlabel{fig:throughput}{{5}{4}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces k6 execution summary with one backend machine (baseline)}}{4}{}\protected@file@percent }
+\newlabel{fig:k6-result-1}{{6}{4}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces k6 execution summary with two backend machines}}{5}{}\protected@file@percent }
+\newlabel{fig:k6-result-2}{{7}{5}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces k6 execution summary with three backend machines}}{5}{}\protected@file@percent }
+\newlabel{fig:k6-result-3}{{8}{5}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Discussion}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-A}}Scalability}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-B}}Elasticity}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-C}}Cost Analysis}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Conclusion}{5}{}\protected@file@percent }
+\bibcite{tanenbaum}{1}
+\bibcite{haproxy}{2}
+\bibcite{gcp}{3}
+\@writefile{toc}{\contentsline {section}{References}{6}{}\protected@file@percent }
+\gdef \@abspage@last{6}
