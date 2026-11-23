@@ -1,0 +1,11 @@
+# Python virtual environment: recreate with
+#   python3 -m venv venv && venv/bin/pip install -r analysis/requirements.txt
+venv/
+__pycache__/
+
+# LaTeX build files (the paper's source is the .tex, the built PDFs are in pdfs/)
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
