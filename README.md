@@ -11,6 +11,15 @@ author:
 title: Demonstration of Load Balancing in a Distributed System
 ---
 
+## What's in this repository
+
+- `pvo_project_175030.tex` is the paper's LaTeX source, with its figures (the PNGs) next to it. The built versions are in `pdfs/`. This README is the same paper converted to Markdown.
+- `pvobackend/` is the backend service, in Kotlin with Ktor.
+- `k6/` holds the k6 load-test script and the results for one, two and three machines.
+- `monitor_proxy.sh` is the script used to watch the load balancer.
+- `PvO_Architechture.drawio` is the architecture diagram.
+- `analysis/` has the Python scripts that turned the k6 results into the graphs. To run them: `python3 -m venv venv`, `venv/bin/pip install -r analysis/requirements.txt`, then run a script from the folder holding the CSVs (for example `cd k6 && ../venv/bin/python ../analysis/plotK6.py`).
+
 ::: IEEEkeywords
 Distributed systems, load balancing, round-robin, cloud computing,
 stateless services
